@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colendar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+
+        input {
+            padding: 0 20px 0 20px;
+            width: 450px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: 3px solid #323232;
+            transition: 0.3s;
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+
+        body{
+            margin: 40px;
+        }
+
+        .container {
+            width: 800px;
+            height: 550px;
+            padding: 20px 0 30px 0;
+            margin-left: 60px;
+            margin-top: 60px;
+            /* padding: 30px; */
+            border-radius: 20px;
+            border: 3px solid #323232;
+            overflow-y: auto;
+            transition: 0.3s;
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+
+        .talaba {
+            margin-top: 10px;
+            margin-left: 40px;
+            width: 700px;
+            height: 40px;
+            /* border: 2px solid #323232; */
+            font-size: 18px;
+            display: flex;
+            transition: 0.3s;
+            text-align: center;
+            color: white;
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+
+        .ism_familiya {
+            width: 350px;
+            height: 100%;
+            border: 1px solid #323232;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .gurux {
+            width: 170px;
+            height: 100%;
+            border: 1px solid #323232;
+        }
+
+        .qavati {
+            width: 170px;
+            height: 100%;
+            border: 1px solid #323232;
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="date">
+    <div class="container">
+        <div class="talaba">
+            <div class="ism_familiya" style="background-color: #8bce2d;"></div>
+            <div class="gurux" style="background-color: #8bce2d;"></div>
+            <div class="qavati" style="background-color: #8bce2d;"></div>
+        </div>
+        <div class="talaba" >
+            <div class="ism_familiya" style="background-color: red;"></div>
+            <div class="gurux" style="background-color: red;"></div>
+            <div class="qavati" style="background-color: red;"></div>
+        </div>
+       
+    </div>
+
+</body>
+
+</html>
